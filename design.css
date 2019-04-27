@@ -1,0 +1,325 @@
+/* GLOBAL STYLES
+-------------------------------------------------- */
+/* Padding below the footer and lighter body text */
+
+body {
+
+  padding-bottom: 3rem;
+ 
+}
+
+/* ---------------NAVBAR----------------- */
+
+.navbar-dark{
+  border-top: 1px solid #004244; 
+  border-bottom: 1px solid #004244; 
+  background-color: rgba(0,0,0,0.1) !important;
+  z-index: 100000;
+  width: 100%;
+}
+
+/* ------------- SIDENAV --------------- */
+
+.sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    right: 0;
+    background-color: white; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+.sidebar{
+  list-style-type: none;
+  text-align: center;
+  padding: 0;
+}
+
+/* The navigation menu links */
+.sidenav a {
+    padding: 8px 0px 8px 0px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+/* ------------- SIDELOGIN --------------- */
+
+.sidelogin {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    right: 0;
+    background-color: #D5D5D5; /* White*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+.loginbar{
+  list-style-type: none;
+  text-align: center;
+  padding: 0;
+}
+
+
+
+/* When you mouse over the navigation links, change their color */
+.sidelogin a:hover {
+    color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidelogin .closelog {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+/* ------------------LEFT SIDEBAR--------------------- */
+
+
+.sidebar_list {
+  
+  top: 10px;
+  bottom: 0;
+  left: 0;
+  z-index: 1000;
+  padding: 20px;
+  overflow-x: hidden;
+  overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+  border-right: 1px solid #eee;
+  margin-bottom: 20px;
+}
+
+.side {
+    color: inherit;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 140%;
+    font-family: sans-serif;
+    cursor: pointer;
+    list-style-type: none;
+
+}
+
+.side:hover 
+{
+     color:#00A0C6; 
+     text-decoration:none; 
+     cursor:pointer;  
+}
+
+.side-list{
+  cursor: pointer;
+  color: #EE810D;
+}
+
+
+
+/* ------------------------CAROUSEL-------------------------- */
+
+/* Carousel base class */
+.carousel {
+
+  margin-bottom: 4rem;
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  bottom: 2vh;
+  z-index: 10;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel-item {
+
+  height: 89vh;
+  background-color: #777;
+}
+.carousel-item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 89vh;
+}
+
+
+  
+
+
+/* MARKETING CONTENT
+-------------------------------------------------- */
+
+/* Center align the text within the three columns below the carousel */
+.marketing .col-lg-4 {
+  margin-top: 4%;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+.marketing h2 {
+  margin-top: 7%;
+  font-family: "Oswald", sans-serif;
+  font-weight: 300;
+  font-size: 220%;
+}
+.marketing .col-lg-4 p {
+  font-family: "Quicksand", sans-serif;
+  font-size: 100%;
+  margin-top: 3%;
+  margin-right: .75rem;
+  margin-left: .75rem;
+}
+
+.nav-link{
+  padding-right: 60px !important;
+  opacity: 0.8;
+  font-size: 130%;
+  color: #012E2E !important;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+}
+
+/* Featurettes
+------------------------- */
+
+.featurette-divider {
+  margin: 5rem 0; /* Space out the Bootstrap <hr> more */
+}
+
+/* Thin out the marketing headings */
+.featurette-heading {
+  font-size: 300%;
+  margin-top: 4%;
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -.05rem;
+}
+
+.lead{
+  color: #004244;
+}
+
+.featurette-image{
+  width: 300px;
+}
+
+
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+
+    @media screen and (min-width: 1200px) {
+
+  .desktop{
+    display: block;
+  }
+  .mobile{
+    display: none;
+  }
+}
+      
+@media (min-width: 990px) and (max-width: 1200px){
+  .nav-link{
+    font-size: 100%;
+    padding-right: 60px !important;
+  }
+  .desktop{
+    display: block;
+  }
+  .mobile{
+    display: none;
+  }
+
+}
+
+@media (min-width: 850px) and (max-width: 990px){
+  .nav-link{
+    font-size: 110%;
+    padding-right: 30px !important;
+  }
+    .desktop{
+    display: block;
+  }
+  .mobile{
+    display: none;
+  }
+}
+
+@media (min-width: 768px) and (max-width:850px){
+  .nav-link{
+    font-size: 100%;
+    padding-right: 20px !important;
+  }
+
+    .desktop{
+    display: block;
+  }
+  .mobile{
+    display: none;
+  }
+}
+
+@media (min-width: 600px) and (max-width:768px){
+
+    .desktop{
+    display: none;
+  }
+  .mobile{
+    display: block;
+  }
+  .carousel-caption{
+    font-size: 85% !important;
+  }
+    .featurette-image{
+      margin-top: 5%;
+    width: 80%;
+  }
+}
+
+    @media screen and (max-width: 600px) {
+
+  .desktop{
+    display: none;
+  }
+  .mobile{
+    display: block;
+  }
+   .carousel-caption h1{
+    font-size: 350% !important;
+  }
+   .carousel-caption p{
+    font-size: 110% !important;
+  }
+  .featurette-heading{
+    font-size: 280% !important;
+  }
+  .featurette-image{
+    width: 80%;
+  }
+}

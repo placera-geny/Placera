@@ -1,0 +1,27 @@
+body{
+	font-family: 'Roboto', sans-serif;
+}
+.jumbotron{
+	color: #2c3e50;
+	background: #ecf0f1;
+}
+.navbar-inverse{
+	background: #2c3e50;
+}
+.navbar-inverse .navbar-nav>li>a{
+	color: white;
+}
+.navbar-inverse .navbar-brand{
+	color: white;
+}
+.image{
+	width: 100%;
+	transition: opacity 1s ease-in-out;
+}
+.image:hover{
+	opacity: .5;
+}
+.rounded-circle {
+	height: 300px;
+	width: 300px;
+}
